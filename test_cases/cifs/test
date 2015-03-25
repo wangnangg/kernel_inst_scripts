@@ -1,5 +1,5 @@
-USERNAME=huawei
-REMOTE_DIR=/home/huawei/Documents/kernel_inst_scripts/test_cases/cifs/remote_dir
+USERNAME=zz78
+REMOTE_DIR=/home/zz78/kernel_inst_scripts/test_cases/cifs/remote_dir
 SHARE_NAME=aging_share
 PASSWORD=123
 if ! mount -t cifs -o username=$USERNAME,password=$PASSWORD,sec=ntlmv2 //127.0.0.1/$SHARE_NAME $REMOTE_DIR; then
