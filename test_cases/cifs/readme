@@ -1,7 +1,0 @@
-1. add a user to samba 
-#smbpasswd -a zz78
-
-2. edit /etc/samba/smb.conf to share a folder
-
-3. restart samba service
-#service smb restart

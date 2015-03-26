@@ -4,5 +4,5 @@
 #define SYS_spinlock_deadlock 299
 int main(int argc, char *argv[])
 {
-	syscall(SYS_spinlock_deadlock, 1);
+	syscall(SYS_spinlock_deadlock, 0);
 }

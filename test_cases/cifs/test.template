@@ -1,0 +1,15 @@
+if ! mount -t cifs -o username=$USERNAME,password=$PASSWORD,sec=ntlmv2 //127.0.0.1/$SHARE_NAME $REMOTE_DIR; then
+        echo "error in mounting cifs"
+        sleep 0.5
+        if ! mount -t cifs -o username=$USERNAME,sec=ntlmv2 //127.0.0.1/$SHARE_NAME $REMOTE_DIR; then
+            exit -1
+        fi
+fi
+
+if ! umount $REMOTE_DIR; then
+		echo "error in umount cifs"
+		sleep 0.5
+        if ! umount $REMOTE_DIR; then
+            exit -1
+        fi
+fi

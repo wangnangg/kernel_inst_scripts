@@ -1,5 +1,5 @@
 NUM=0
-TOTAL=150000
+TOTAL=100000
 while test $NUM -lt $TOTAL 
 	do
 		echo "${NUM}th run"
