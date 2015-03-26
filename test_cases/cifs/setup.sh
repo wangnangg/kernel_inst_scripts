@@ -27,6 +27,8 @@ if ! testparm ; then
 	echo "setup cifs failed."
 	exit -1
 fi
+chkconfig smb on
+chkconfig nmb on
 service smb start && service smb restart
 
 cifs_test_file=$cifs_dir/test
