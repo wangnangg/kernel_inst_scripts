@@ -14,3 +14,5 @@ c_file=$test_dir/spinunlock.c
 test_file=$test_dir/untest
 gcc $c_file -o $test_file
 
+echo "setup spinlock success."
+

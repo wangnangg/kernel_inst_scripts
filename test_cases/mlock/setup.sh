@@ -11,3 +11,4 @@ test_file=$test_dir/test
 
 gcc $c_file -o $test_file
 
+echo "setup mlock success."
